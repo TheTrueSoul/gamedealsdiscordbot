@@ -1,0 +1,4 @@
+Token
+NjkyMTEyMjk5NzcwNzczNTQ1.XnpyMQ.iu6SvVz8qbHUsQZOSK0LLgdFTyQ
+Link
+https://discordapp.com/api/oauth2/authorize?client_id=692112299770773545&permissions=27648&scope=bot

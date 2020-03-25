@@ -1,0 +1,458 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200325.191651.8864.0.001.json",
+    "dumpEventTime": "2020-03-25T19:16:51Z",
+    "dumpEventTimeStamp": "1585153011805",
+    "processId": 8864,
+    "cwd": "C:\\Users\\omadz\\Desktop\\GameDeals",
+    "commandLine": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "index.js"
+    ],
+    "nodejsVersion": "v12.16.1",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "12.16.1",
+      "v8": "7.8.279.23-node.31",
+      "uv": "1.34.0",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.40.0",
+      "napi": "5",
+      "llhttp": "2.0.4",
+      "http_parser": "2.9.3",
+      "openssl": "1.1.1d",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Erbium",
+      "headersUrl": "https://nodejs.org/download/release/v12.16.1/node-v12.16.1-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.16.1/node-v12.16.1.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v12.16.1/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.18363",
+    "osVersion": "Windows 10 Home",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i7-8700K CPU @ 3.70GHz",
+        "speed": 3696,
+        "user": 11728234,
+        "nice": 0,
+        "sys": 10434484,
+        "idle": 121636281,
+        "irq": 4268750
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8700K CPU @ 3.70GHz",
+        "speed": 3696,
+        "user": 12983687,
+        "nice": 0,
+        "sys": 3886765,
+        "idle": 126928546,
+        "irq": 252734
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8700K CPU @ 3.70GHz",
+        "speed": 3696,
+        "user": 21133453,
+        "nice": 0,
+        "sys": 5122593,
+        "idle": 117542953,
+        "irq": 139812
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8700K CPU @ 3.70GHz",
+        "speed": 3696,
+        "user": 11745609,
+        "nice": 0,
+        "sys": 3338468,
+        "idle": 128714921,
+        "irq": 89359
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8700K CPU @ 3.70GHz",
+        "speed": 3696,
+        "user": 18229937,
+        "nice": 0,
+        "sys": 4651640,
+        "idle": 120917203,
+        "irq": 132531
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8700K CPU @ 3.70GHz",
+        "speed": 3696,
+        "user": 7242718,
+        "nice": 0,
+        "sys": 1744406,
+        "idle": 134811671,
+        "irq": 80078
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8700K CPU @ 3.70GHz",
+        "speed": 3696,
+        "user": 19970062,
+        "nice": 0,
+        "sys": 3683359,
+        "idle": 120145375,
+        "irq": 123484
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8700K CPU @ 3.70GHz",
+        "speed": 3696,
+        "user": 6820046,
+        "nice": 0,
+        "sys": 1720000,
+        "idle": 135258750,
+        "irq": 74921
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8700K CPU @ 3.70GHz",
+        "speed": 3696,
+        "user": 18327937,
+        "nice": 0,
+        "sys": 3433828,
+        "idle": 122037015,
+        "irq": 132015
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8700K CPU @ 3.70GHz",
+        "speed": 3696,
+        "user": 7160234,
+        "nice": 0,
+        "sys": 1916156,
+        "idle": 134722406,
+        "irq": 79593
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8700K CPU @ 3.70GHz",
+        "speed": 3696,
+        "user": 17121328,
+        "nice": 0,
+        "sys": 3619593,
+        "idle": 123057875,
+        "irq": 130359
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8700K CPU @ 3.70GHz",
+        "speed": 3696,
+        "user": 11885890,
+        "nice": 0,
+        "sys": 2062250,
+        "idle": 129850656,
+        "irq": 82125
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "Ethernet",
+        "internal": false,
+        "mac": "70:85:c2:8b:69:62",
+        "address": "fe80::6189:5d4:95c6:78b4",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 12
+      },
+      {
+        "name": "Ethernet",
+        "internal": false,
+        "mac": "70:85:c2:8b:69:62",
+        "address": "192.168.100.43",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "Teredo Tunneling Pseudo-Interface",
+        "internal": false,
+        "mac": "00:00:00:00:00:00",
+        "address": "2001:0:284a:364:2f:1e04:cc14:e71c",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Teredo Tunneling Pseudo-Interface",
+        "internal": false,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::2f:1e04:cc14:e71c",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 15
+      }
+    ],
+    "host": "DESKTOP-CGK8F9U"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff72ccf19f9",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+10873"
+    },
+    {
+      "pc": "0x00007ff72ccf5e1c",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+28316"
+    },
+    {
+      "pc": "0x00007ff72ccf4dd8",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+24152"
+    },
+    {
+      "pc": "0x00007ff72cdf34cb",
+      "symbol": "v8::base::CPU::has_sse+38363"
+    },
+    {
+      "pc": "0x00007ff72d609f4e",
+      "symbol": "v8::Isolate::ReportExternalAllocationLimitReached+94"
+    },
+    {
+      "pc": "0x00007ff72d5f2021",
+      "symbol": "v8::SharedArrayBuffer::Externalize+833"
+    },
+    {
+      "pc": "0x00007ff72d4be57c",
+      "symbol": "v8::internal::Heap::EphemeronKeyWriteBarrierFromCode+1436"
+    },
+    {
+      "pc": "0x00007ff72d4c97d0",
+      "symbol": "v8::internal::Heap::ProtectUnprotectedMemoryChunks+1312"
+    },
+    {
+      "pc": "0x00007ff72d4c62f4",
+      "symbol": "v8::internal::Heap::PageFlagsAreConsistent+3204"
+    },
+    {
+      "pc": "0x00007ff72d4bbb13",
+      "symbol": "v8::internal::Heap::CollectGarbage+1283"
+    },
+    {
+      "pc": "0x00007ff72d4ba184",
+      "symbol": "v8::internal::Heap::AddRetainedMap+2452"
+    },
+    {
+      "pc": "0x00007ff72d4db36d",
+      "symbol": "v8::internal::Factory::NewFillerObject+61"
+    },
+    {
+      "pc": "0x00007ff72d240c51",
+      "symbol": "v8::internal::interpreter::JumpTableTargetOffsets::iterator::operator=+1665"
+    },
+    {
+      "pc": "0x00007ff72da54ddd",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+546637"
+    },
+    {
+      "pc": "0x000000e95a96c573",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2151698432,
+    "totalCommittedMemory": 2151698432,
+    "usedMemory": 2146254968,
+    "availableMemory": 47939200,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 262144,
+        "capacity": 32808,
+        "used": 32808,
+        "available": 0
+      },
+      "new_space": {
+        "memorySize": 2097152,
+        "committedMemory": 2097152,
+        "capacity": 1047456,
+        "used": 351864,
+        "available": 695592
+      },
+      "old_space": {
+        "memorySize": 2122989568,
+        "committedMemory": 2122989568,
+        "capacity": 2120183320,
+        "used": 2120104032,
+        "available": 79288
+      },
+      "code_space": {
+        "memorySize": 430080,
+        "committedMemory": 430080,
+        "capacity": 367936,
+        "used": 367936,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 1052672,
+        "committedMemory": 1052672,
+        "capacity": 592400,
+        "used": 592400,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 24817664,
+        "committedMemory": 24817664,
+        "capacity": 24803144,
+        "used": 24803144,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 2784,
+        "used": 2784,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 1047456,
+        "used": 0,
+        "available": 1047456
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 64,
+    "kernelCpuSeconds": 1.343,
+    "cpuConsumptionPercent": 198.009,
+    "maxRss": 2256273408,
+    "pageFaults": {
+      "IORequired": 753441,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 564,
+      "writes": 6
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "=::": "::\\",
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "APPDATA": "C:\\Users\\omadz\\AppData\\Roaming",
+    "ChocolateyInstall": "C:\\ProgramData\\chocolatey",
+    "ChocolateyLastPathUpdate": "132295572968314349",
+    "CommonProgramFiles": "C:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "DESKTOP-CGK8F9U",
+    "ComSpec": "C:\\WINDOWS\\system32\\cmd.exe",
+    "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "FPS_BROWSER_APP_PROFILE_STRING": "Internet Explorer",
+    "FPS_BROWSER_USER_PROFILE_STRING": "Default",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\omadz",
+    "LOCALAPPDATA": "C:\\Users\\omadz\\AppData\\Local",
+    "LOGONSERVER": "\\\\DESKTOP-CGK8F9U",
+    "NUMBER_OF_PROCESSORS": "12",
+    "OneDrive": "C:\\Users\\omadz\\OneDrive",
+    "OneDriveConsumer": "C:\\Users\\omadz\\OneDrive",
+    "OS": "Windows_NT",
+    "Path": "C:\\Python27\\;C:\\Python27\\Scripts;C:\\Program Files\\AdoptOpenJDK\\jre-11.0.4.11-hotspot\\bin;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NGX;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Users\\omadz\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\omadz\\AppData\\Roaming\\npm",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 158 Stepping 10, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "9e0a",
+    "ProgramData": "C:\\ProgramData",
+    "ProgramFiles": "C:\\Program Files",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "PSModulePath": "C:\\Users\\omadz\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules",
+    "PUBLIC": "C:\\Users\\Public",
+    "SESSIONNAME": "Console",
+    "SystemDrive": "C:",
+    "SystemRoot": "C:\\WINDOWS",
+    "TEMP": "C:\\Users\\omadz\\AppData\\Local\\Temp",
+    "TMP": "C:\\Users\\omadz\\AppData\\Local\\Temp",
+    "USERDOMAIN": "DESKTOP-CGK8F9U",
+    "USERDOMAIN_ROAMINGPROFILE": "DESKTOP-CGK8F9U",
+    "USERNAME": "omadz",
+    "USERPROFILE": "C:\\Users\\omadz",
+    "windir": "C:\\WINDOWS"
+  },
+  "sharedObjects": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\WINDOWS\\SYSTEM32\\ntdll.dll",
+    "C:\\WINDOWS\\System32\\KERNEL32.DLL",
+    "C:\\WINDOWS\\System32\\KERNELBASE.dll",
+    "C:\\WINDOWS\\System32\\WS2_32.dll",
+    "C:\\WINDOWS\\System32\\RPCRT4.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dbghelp.dll",
+    "C:\\WINDOWS\\System32\\PSAPI.DLL",
+    "C:\\WINDOWS\\System32\\ucrtbase.dll",
+    "C:\\WINDOWS\\System32\\ADVAPI32.dll",
+    "C:\\WINDOWS\\System32\\msvcrt.dll",
+    "C:\\WINDOWS\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\USERENV.dll",
+    "C:\\WINDOWS\\System32\\sechost.dll",
+    "C:\\WINDOWS\\System32\\profapi.dll",
+    "C:\\WINDOWS\\System32\\USER32.dll",
+    "C:\\WINDOWS\\System32\\win32u.dll",
+    "C:\\WINDOWS\\System32\\GDI32.dll",
+    "C:\\WINDOWS\\System32\\gdi32full.dll",
+    "C:\\WINDOWS\\System32\\msvcp_win.dll",
+    "C:\\WINDOWS\\System32\\CRYPT32.dll",
+    "C:\\WINDOWS\\System32\\MSASN1.dll",
+    "C:\\WINDOWS\\System32\\bcrypt.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMM.dll",
+    "C:\\WINDOWS\\SYSTEM32\\winmmbase.dll",
+    "C:\\WINDOWS\\System32\\cfgmgr32.dll",
+    "C:\\WINDOWS\\System32\\bcryptPrimitives.dll",
+    "C:\\WINDOWS\\System32\\IMM32.DLL",
+    "C:\\WINDOWS\\System32\\powrprof.dll",
+    "C:\\WINDOWS\\System32\\UMPDC.dll",
+    "C:\\WINDOWS\\SYSTEM32\\CRYPTBASE.DLL",
+    "C:\\WINDOWS\\system32\\uxtheme.dll",
+    "C:\\WINDOWS\\System32\\combase.dll",
+    "C:\\WINDOWS\\system32\\mswsock.dll",
+    "C:\\WINDOWS\\System32\\kernel.appcore.dll",
+    "C:\\WINDOWS\\System32\\NSI.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc6.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\DNSAPI.dll",
+    "C:\\WINDOWS\\system32\\napinsp.dll",
+    "C:\\WINDOWS\\system32\\pnrpnsp.dll",
+    "C:\\WINDOWS\\System32\\winrnr.dll",
+    "C:\\WINDOWS\\system32\\NLAapi.dll",
+    "C:\\WINDOWS\\system32\\wshbth.dll",
+    "C:\\Program Files\\Bonjour\\mdnsNSP.dll",
+    "C:\\Windows\\System32\\rasadhlp.dll",
+    "C:\\WINDOWS\\System32\\fwpuclnt.dll"
+  ]
+}
