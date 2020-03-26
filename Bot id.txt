@@ -1,4 +1,9 @@
-Token
-NjkyMTEyMjk5NzcwNzczNTQ1.XnpyMQ.iu6SvVz8qbHUsQZOSK0LLgdFTyQ
-Link
-https://discordapp.com/api/oauth2/authorize?client_id=692112299770773545&permissions=27648&scope=bot
+
+Your token was retrieved successfully. Thank you for using reddit-oauth-helper.
+{
+    "access_token": "472092989087-kgN8dSlIT-CnNZG1gS00K92Uvdw",
+    "token_type": "bearer",
+    "expires_in": 3600,
+    "refresh_token": "472092989087-TmlQ_dVvaxF7xS6i8uh3DLxQZiM",
+    "scope": "read"
+}

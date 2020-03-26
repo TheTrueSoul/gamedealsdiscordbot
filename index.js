@@ -18,8 +18,7 @@ const r = new snoowrap({
     userAgent: 'gamedealsDiscordBot',
     clientId: '_RiNfMMa8z1k6w',
     clientSecret: 'BEI2MgxKWjuHJoGk-EDFqIJNyMA',
-    username: 'gamedealspersonalbot',
-    password: 'fahad209'
+    refreshToken: '472092989087-TmlQ_dVvaxF7xS6i8uh3DLxQZiM'
 });
 
 r.config({ continueAfterRatelimitError: true });
@@ -64,18 +63,3 @@ function asyncFunc(callback) {
         return callback();
     })
 }
-
-
-// function syncFunc() {
-//     while (true) {
-//         // console.log('test' + newTitle)
-//         if (oldTitle == newTitle) {
-//             main()
-//         } else {
-//             oldTitle = newTitle
-//             oldLink = newLink
-//             currentChannel.send(oldTitle + ' ' + oldLink);
-//             break
-//         }
-//     }
-// }
