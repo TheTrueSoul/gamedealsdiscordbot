@@ -55,7 +55,7 @@ function main() {
 }
 
 function asyncFunc(callback) {
-    r.getSubreddit('gamedeals').getNew({ limit: 0 }).then(posts => {
+    r.getSubreddit('gamedeals').getNew({ limit: 0 }).hide().then(posts => {
         posts.map(submission => {
             newTitle = submission.title
             newLink = submission.url
