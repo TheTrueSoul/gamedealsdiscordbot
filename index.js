@@ -7,7 +7,7 @@ var oldLink = ''
 var newLink = ''
 var currentChannel;
 
-client.login('NjkyMTEyMjk5NzcwNzczNTQ1.Xn4rVw.TG50FPPx42AsCoT6KQWOPtp5ZG8');
+client.login(process.env.TOKEN);
 
 const r = new snoowrap({
     userAgent: 'gamedealsDiscordBot',
