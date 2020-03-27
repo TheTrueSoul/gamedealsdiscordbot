@@ -16,7 +16,7 @@ const r = new snoowrap({
     refreshToken: '472092989087-TmlQ_dVvaxF7xS6i8uh3DLxQZiM'
 });
 
-bot.on('ready', () => {
+client.on('ready', () => {
     console.info(`logged in as ${bot.user.tag}!`);
     bot.user.setActivity('!start', {
         type: 'LISTENING'
