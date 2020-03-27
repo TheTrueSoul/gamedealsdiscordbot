@@ -1,6 +1,13 @@
 const snoowrap = require('snoowrap');
 const Discord = require('discord.js');
 const client = new Discord.Client();
+var oldTitle = ''
+var newTitle = ''
+var oldLink = ''
+var newLink = ''
+var currentChannel;
+
+client.login('NjkyMTEyMjk5NzcwNzczNTQ1.Xn4nFQ.lIZcPjzgGlpBW95Qk8ZCBpw8his');
 
 const r = new snoowrap({
     userAgent: 'gamedealsDiscordBot',
@@ -11,7 +18,7 @@ const r = new snoowrap({
 
 r.config({ continueAfterRatelimitError: true });
 console.log('Starting Feed..')
-var currentChannel;
+
 
 client.on('message', message => {
     if (message.content === '!start') {
@@ -21,11 +28,7 @@ client.on('message', message => {
     }
 });
 
-client.login('NjkyMTEyMjk5NzcwNzczNTQ1.Xn4kqg.a9lpBG5JqAK0t9efA-AOWVYs4SE');
-var oldTitle = ''
-var newTitle = ''
-var oldLink = ''
-var newLink = ''
+
 
 function syncFunc() {
     if (oldTitle == newTitle) {
