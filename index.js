@@ -1,10 +1,8 @@
 const snoowrap = require('snoowrap');
 const Discord = require('discord.js');
 const client = new Discord.Client();
-var oldTitle = ''
-var newTitle = ''
-var oldLink = ''
-var newLink = ''
+var utc = 0
+var submissions = []
 var currentChannel;
 
 client.login(process.env.TOKEN);
@@ -17,15 +15,14 @@ const r = new snoowrap({
 });
 
 client.on('ready', () => {
-    console.info(`logged in as ${bot.user.tag}!`);
-    bot.user.setActivity('!start', {
+    console.info(`logged in as ${client.user.tag}!`);
+    client.user.setActivity('!start', {
         type: 'LISTENING'
     });
 });
 
 r.config({ continueAfterRatelimitError: true });
 console.log('Starting Feed..')
-
 
 client.on('message', message => {
     if (message.content === '!start') {
@@ -35,17 +32,19 @@ client.on('message', message => {
     }
 });
 
-
-
 function syncFunc() {
-    if (oldTitle == newTitle) {
-        setTimeout(main, 300000)
-    } else {
-        oldTitle = newTitle
-        oldLink = newLink
-        currentChannel.send(oldTitle + ' ' + oldLink);
-        setTimeout(main, 300000)
+    submissions.reverse()
+    console.log(submissions.length)
+    for (let index = 0; index < submissions.length; index++) {
+        if (submissions[index].created_utc <= process.env.utc) {
+        } else {
+            currentChannel.send(submissions[index].title + ' ' + submissions[index].url);
+            process.env.utc = submissions[index].created_utc
+        }
     }
+    submissions = []
+    console.log(submissions.length)
+    main()
 }
 
 function main() {
@@ -53,10 +52,9 @@ function main() {
 }
 
 function asyncFunc(callback) {
-    r.getSubreddit('gamedeals').getNew({ limit: 0 }).then(posts => {
+    r.getSubreddit('gamedeals').getNew({ limit: 5 }).then(posts => {
         posts.map(submission => {
-            newTitle = submission.title
-            newLink = submission.url
+            submissions.push(submission)
         })
         return callback();
     })
