@@ -34,7 +34,6 @@ client.on('message', message => {
 
 function syncFunc() {
     submissions.reverse()
-    console.log(submissions.length)
     for (let index = 0; index < submissions.length; index++) {
         if (submissions[index].created_utc <= process.env.utc) {
         } else {
@@ -43,8 +42,6 @@ function syncFunc() {
         }
     }
     submissions = []
-    console.log(submissions.length)
-    main()
 }
 
 function main() {
