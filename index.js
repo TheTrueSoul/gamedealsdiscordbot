@@ -1,7 +1,7 @@
 const snoowrap = require('snoowrap');
 const Discord = require('discord.js');
 const client = new Discord.Client();
-var utc = 0
+var utc = process.env.utc
 var submissions = []
 var currentChannel;
 
@@ -35,13 +35,14 @@ client.on('message', message => {
 function syncFunc() {
     submissions.reverse()
     for (let index = 0; index < submissions.length; index++) {
-        if (submissions[index].created_utc <= process.env.utc) {
+        if (submissions[index].created_utc <= utc) {
         } else {
             currentChannel.send(submissions[index].title + ' ' + submissions[index].url);
-            process.env.utc = submissions[index].created_utc
+            utc = submissions[index].created_utc
         }
     }
     submissions = []
+    main()
 }
 
 function main() {
